@@ -4,29 +4,34 @@
   <title>Severin's site</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
   <header>
     <ul>
-      <a href="#"><li>Severin Boguharskiy</li></a>
-      <a href="#"><li>Работы</li></a>
-      <a href="#"><li>Обо мне</li></a>
+      <a href="https://sirseverin.ru/"><li>Severin Boguharskiy</li></a>
+      <a href="/cheese"><li>Сыр</li></a>
+      <a href="#about"><li>Основное</li></a>
     </ul>
   </header>
 
   <main>
     <section id="about" class="about">
       <div>
-        Всем привет, я Северин. Я работаю над веб проектами,
-        векторной графикой, а также увлекаюсь производством
-        сыра из молока.
-        На этом сайте представлены мои работы и контакты.
+        Всем привет, я Северин. Я работаю над веб проектами, векторной графикой, а также увлекаюсь производством сыра из молока. На этом сайте представлены мои работы и контакты.
       </div>
       <img src="images/severin.jpg" alt="Severin">
-      <a href="https://github.com/Diatom" target="_blank">Git Hub</a>
-      <a href="https://www.facebook.com/severin.bo" target="_blank">Facebook</a>
-      <a href="https://vk.com/severinb" target="_blank">Vk</a>
+      <ul>
+        <a href="https://github.com/Diatom" target="_blank"><li>Git Hub</li></a>
+        <a href="https://www.facebook.com/severin.bo" target="_blank"><li>Facebook</li></a>
+        <a href="https://vk.com/severinb" target="_blank"><li>Vk</li></a>
+        <a href="mailto:severin.b@me.com"><li>severin.b@me.com</li></a>
+        <li>+7(903)186-93-32</li>
+      </ul>
+
+<!--       <p>+7(903)186-93-32</p> -->
+
     </section>
 
     <section id="projects" class="projects">
@@ -48,10 +53,37 @@
           </a>
         Проекты
       </h1>
+
+      <div class="one">
+        <h2>Рецепты сыра</h2>
+        <p>Сайт с подробным описанием технологии производства сыров на основе моего опыта.</p>
+        <div class="buttons">
+          <a href="#" target="_blank">Проект</a>
+          <a href="https://github.com/Diatom/recipes-of-cheeses" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="one">
+        <h2>Список дел</h2>
+        <p>Приложение на оригинальном Java Script.</p>
+        <div class="buttons">
+          <a href="#" target="_blank">Проект</a>
+          <a href="https://github.com/Diatom/to-do-list-js" target="_blank"></a>
+        </div>
+      </div>
+      <div class="one">
+        <h2>Мой сайт на React</h2>
+        <p>Первая версия моего сайта полностью написанного на React, без учета Progressive enhancment.</p>
+        <div class="buttons">
+          <a href="#" target="_blank">Проект</a>
+          <a href="https://github.com/Diatom/my-site" target="_blank"></a>
+        </div>
+      </div>
+
     </section>
   </main>
 
-  <footer>© 2019. Сделано Severin B.</footer>
+  <footer>© 2019. Сделано <a href="https://github.com/Diatom/my-site-2" target="_blank">Severin B.</a></footer>
 
 </body>
 </html>

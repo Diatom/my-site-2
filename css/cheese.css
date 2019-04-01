@@ -1,0 +1,29 @@
+.cheese-present div {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 80px;
+}
+.projects .one-cheese {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: none;
+  align-items: start;
+  grid-gap: 40px;
+  margin: 40px 0 0 0;
+}
+.one-cheese div {
+  grid-column: 1 / 2;
+}
+.one-cheese img {
+  grid-column: 2 / 3;
+  width: 100%;
+  border-radius: 4px;
+}
+.one-cheese div h2 {
+  font-size: 1.2em;
+}
+.one-cheese div p {
+  font-size: 0.9em;
+}

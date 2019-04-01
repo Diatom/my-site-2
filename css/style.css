@@ -1,4 +1,4 @@
-body  {
+body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -44,6 +44,9 @@ footer {
   font-size: 12px;
   padding: 20px 0 20px 0;
 }
+footer a {
+  text-decoration-style: dotted;
+}
 main {
   grid-row: 2;
   margin-top: 28px;
@@ -57,19 +60,27 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+.about {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 3fr 1fr;
+}
 .about div {
   font-size: 16px;
   line-height: 1.6;
   margin-top: 80px;
-  width: 440px;
 }
 .about img {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  margin: 50px 40px 20px 80px;
+  margin: 50px 10px 20px 10px;
 }
-.about a {
+.about ul {
+  margin: 0;
+  padding: 0;
+}
+.about ul a {
   border: 2px solid green;
   border-radius: 3.5px;
   color: black;
@@ -78,13 +89,30 @@ section {
   text-align: center;
   margin-right: 10px;
   padding: 2px 5px 2px 5px;
+  display: inline-block;
+}
+.about ul a li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about ul li:last-child {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 .about a:hover {
   border: 2px solid purple;
   background-color: whitesmoke;
 }
+.about p {
+  padding: 3px;
+  margin: 0;
+  text-decoration: underline;
+}
 .projects {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .projects h1 {
   width: 100%;
@@ -96,4 +124,102 @@ section {
 }
 .projects h1:hover .anchor {
   opacity: 1.0;
+}
+.projects .one {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-rows: none;
+  align-items: center;
+  grid-gap: 20px;
+}
+.one h2 {
+  font-size: 0.9em;
+  grid-column: 1 / 2;
+}
+.one p {
+  font-size: 0.8em;
+  grid-column: 2 / 3;
+}
+.buttons {
+  grid-column: 3 / 4;
+}
+.one a {
+  border: 2px solid purple;
+  border-radius: 3.5px;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0 0 10px;
+  padding: 5px 5px 5px 5px;
+}
+.one a:hover {
+  border: 2px solid green;
+}
+.buttons a:last-child {
+  padding: 5px 15px 5px 15px;
+  background-image: url(/../images/github.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid blue;
+}
+.buttons a:last-child:hover {
+  border: 2px solid green;
+}
+
+@media (max-width: 750px) {
+  html {
+    padding: 0 10px 0 10px;
+  }
+  header {
+    margin-left: -10px;
+  }
+  header ul {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+    padding: 0;
+  }
+  .about ul a {
+    margin: 10px;
+  }
+  .projects .one {
+  grid-template-columns: 2fr 4fr 3fr;
+}
+}
+
+@media (max-width: 440px) {
+  header ul a {
+    margin: 8px 0 8px 0px;
+    text-align: center;
+    width: 50%;
+  }
+  header ul a:first-child {
+    width: 100%;
+    text-align: left;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .about ul a {
+    display: block;
+    margin: 20px 40px 20px 10px;
+  }
+  .about img {
+    display: none;
+  }
+  .about p {
+    margin-left: 20px;
+  }
+  .projects .one {
+  grid-template-columns: 1fr 0fr 1fr;
+  grid-gap: 5px;
+}
+.one p {
+  display: none;
+}
 }
