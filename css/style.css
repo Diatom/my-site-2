@@ -11,8 +11,8 @@ header {
   position: fixed;
   grid-row: 1;
   width: 100%;
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgb(50, 50, 50);
+  border-top: 1px solid rgb(199, 7, 7);
 }
 header ul {
   width: 700px;
@@ -24,6 +24,7 @@ header ul li {
   margin: 5px 25px 5px 25px;
   padding: 0;
   float: right;
+  list-style: none;
 }
 header ul li a {
   text-decoration: none;
@@ -37,7 +38,6 @@ header ul li:first-child {
   margin-left: 10px;
 }
 header ul li a {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
