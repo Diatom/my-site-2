@@ -56,7 +56,7 @@ main {
   width: 100%;
 }
 section {
-  width: 680px;
+  max-width: 680px;
   margin: auto;
   padding: 10px;
   height: auto;
@@ -66,7 +66,7 @@ section {
 .about {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: auto auto;
 }
 .about div {
   font-size: 16px;
@@ -111,7 +111,8 @@ section {
   text-decoration: underline;
 }
 .projects {
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
+  padding: 0 0 0 10px;
 }
 .projects h1 {
   width: 100%;
@@ -183,9 +184,12 @@ section {
     width: 100%;
     padding: 0;
   }
+  .about ul li {
+    display: inline-block;
+    margin: 20px 0 0 0;
+  }
   .about ul li a {
-    margin: 10px;
-    display: block;
+    margin: 0;
   }
   .projects .one {
     grid-template-columns: 2fr 4fr 3fr;
@@ -204,11 +208,15 @@ section {
   }
   .about {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
   }
-  .about ul a {
-    display: block;
-    margin: 20px 40px 20px 10px;
+  .about div {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .about ul {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
   .about img {
     display: none;
@@ -217,10 +225,14 @@ section {
     margin-left: 20px;
   }
   .projects .one {
-    grid-template-columns: 1fr 0fr 1fr;
+    grid-template-columns: 60% 0 auto;
     grid-gap: 5px;
+    margin: 10px;
   }
   .one p {
     display: none;
+  }
+  .one a {
+    margin: 0 0 0 5px;
   }
 }
