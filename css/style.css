@@ -169,9 +169,11 @@ section {
   border: 2px solid blue;
 }
 .buttons a:last-child:hover {
-  border: 2px solid green;
-  background-color: rgb(202, 206, 179);
+  border: 2px solid purple;
+  background-color: purple;
   box-shadow: none;
+  background-image: url(/../images/github-white.png);
+  box-shadow: 0 0 5px rgba(150, 150, 150, 0.8);
 }
 
 @media (max-width: 750px) {
